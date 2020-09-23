@@ -151,22 +151,15 @@ switch currentHR {
   case 181...200:
   print("You are in the Maximum zone. Activity in this zone helps fit athletes develop speed.")
   default: 
+  print("You are above the recommended heart rate. Stop all activities to lower your heart rate to a healthy level.")
 }
 // Refactor the code below so that largest is declared and assigned to in one line using the ternary operator.
 let number1 = 14
 let number2 = 25
 
 var largest: Int
-if number1 > number2 {
-    largest = number1
-} else {
-    largest = number2
-}
+largest = number1 > number2 ? number1 : number2
 
 // The code below should look similar to code you wrote in the Fitness Decisions exercise. The if-else statement is actually unnecessary, and instead you can print either one statement or the other all on one line using the ternary operator. Go ahead and refactor the code below to do just that.
 
-if steps < stepGoal / 2 {
-    print("Almost halfway!")
-} else {
-    print("Over halfway!")
-}
+print(steps < (stepGoal / 2) ? "Almost halfway!" : "Over halfway!")
